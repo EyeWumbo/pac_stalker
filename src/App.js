@@ -81,7 +81,6 @@ class App extends Component {
   // Loading bar to show current progress in terms of grabbing info. Has a skip button if you don't want to wait around.
 
   loadingBar() {
-    const hasOver500 = (this.state.itemCount || 500) >= 50;
     return (
       <div className="loading-screen col center x-center">
         <h2 className="loading-title">
@@ -92,7 +91,7 @@ class App extends Component {
             <div className="loading-fill" style={{width: this.state.percentageDone + "%"}}></div>
           </div>
           {
-            this.state.itemCount && hasOver500 ? (
+            this.state.itemCount ? (
               <button className="loading-skip" onClick={() => { this.setState({ skipLoad: true }) }}>Skip Loading</button>
             ) : (
               null
@@ -102,13 +101,6 @@ class App extends Component {
         </div>
         <div className="loading-text">
           <span>{ this.state.itemCount } / { this.state.total } items loaded!&nbsp;</span>
-          {
-            hasOver500 ? (
-              null
-            ) : (
-              <span>Skipping loading available in { (500 - this.state.itemCount) / 50 }...</span>
-            )
-          }
         </div>
       </div>
     )
