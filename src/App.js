@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 
 import EventDashboard from "./EventDashboard.js";
-import PoliticalEvent from "./Event.js";
 
 class App extends Component {
 

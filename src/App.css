@@ -79,6 +79,14 @@
   margin: 10px;
 }
 
+.recipient.red {
+  background-color: #FCC;
+}
+
+.recipient.blue {
+  background-color: #CCF;
+}
+
 .recipient-contact-header {
   margin: 10px 0;
 }

@@ -54,8 +54,13 @@ export default class Recipient extends Component {
 
   render() {
     const rec = this.props.recipient;
+    var recBG = "";
+    switch(rec.party) {
+      case "D": recBG = "blue"; break;
+      case "R": recBG = "red"; break;
+    }
     return (
-      <div className="recipient">
+      <div className={`recipient ${recBG}`}>
         <b>{ rec.title } { rec.name } ({ rec.party || "I" } - { rec.state || "US" })</b>
         {
           this.sponsorItem()
