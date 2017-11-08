@@ -50,6 +50,10 @@
   flex-wrap: wrap;
 }
 
+.loading-title {
+  margin-top: 0;
+}
+
 .loading-screen {
   width: 100%;
   height: 100vh;
@@ -80,11 +84,11 @@
 }
 
 .recipient.red {
-  background-color: #FCC;
+  background-color: #FAA;
 }
 
 .recipient.blue {
-  background-color: #CCF;
+  background-color: #AAF;
 }
 
 .recipient-contact-header {

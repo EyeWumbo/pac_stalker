@@ -84,6 +84,9 @@ class App extends Component {
     const hasOver500 = (this.state.itemCount || 500) >= 50;
     return (
       <div className="loading-screen col center x-center">
+        <h2 className="loading-title">
+          PAC Stalker v0.0.1
+        </h2>
         <div className="row" style={{marginBottom: 10}}>
           <div className="loading-bar">
             <div className="loading-fill" style={{width: this.state.percentageDone + "%"}}></div>
