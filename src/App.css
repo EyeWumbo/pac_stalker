@@ -83,6 +83,18 @@
   margin: 10px;
 }
 
+@media screen and (max-width: 1000px) {
+  .recipient {
+    width: calc(50vw - 40px);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .recipient {
+    width: calc(100vw - 40px);
+  }
+}
+
 .recipient.red {
   background-color: #FAA;
 }
